@@ -32,7 +32,8 @@ function countdownTimerSeconds() {
     updateTimerDisplay(minutes, 0);
     
     if (minutes === 0 && seconds === 0) {
-      resetTimerControls()      
+      timerEndAlarm.play();
+      resetTimerControls();     
       return
     };
     if (seconds <= 0) {

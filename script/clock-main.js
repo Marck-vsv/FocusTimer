@@ -1,4 +1,5 @@
 control.play.addEventListener('click', function () {
+  controlClick.play();
   control.play.classList.add('hide');
   control.setTimer.classList.add('hide');
 
@@ -9,12 +10,14 @@ control.play.addEventListener('click', function () {
 });
 
 control.pause.addEventListener('click', function () {
+  controlClick.play();
   control.pause.classList.add('hide');
   control.play.classList.remove('hide');
   clearTimeout(timerCountdownTimeout);
 });
 
 control.stop.addEventListener('click', function () {
+  controlClick.play();
   clearTimeout(timerCountdownTimeout);
   resetTimerControls();
   resetTimerDisplay();
@@ -28,6 +31,7 @@ function resetTimerControls() {
 }
 
 control.setTimer.addEventListener('click', function () {
+  controlClick.play();
   let minutesSettingMaintain = prompt('Quantos minutos quer adicionar?');
   if (!minutesSettingMaintain) {
     resetTimerDisplay();
