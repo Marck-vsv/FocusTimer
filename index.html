@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <!-- script/links -->
+  <link rel="shortcut icon" href="assets/timer-watch.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <script src="./script/index.js" defer></script>
+  <script src="./script/clock-main.js" defer></script>
+  <script src="./script/sound-controller.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="timer-wrapper">
+      <div class="timer">
+        <p><span class="timerMinutes">00</span></p>
+        <p><span class="dots">:</span></p>
+        <p><span class="timerSeconds">00</span></p>
+      </div>
+      <div class="timerController">
+        <button class="playButton"><img src="./assets/timer-play.svg"></button>
+        <button class="pauseButton hide"><img src="./assets/timer-pause.svg"></button>
+        <button class="stopButton hide"><img src="./assets/timer-stop.svg"></button>
+        <button class="setTimerButton"><img src="./assets/timer-watch.svg"></button>
+      </div>
+    </div>
+  </main>
+  <div class="soundController">
+    <button class="soundOn"><img src="./assets/sound-play-button.svg"></button>
+    <button class="soundOff hide"><img src="./assets/sound-mute-button.svg"></button>
+  </div>
+</body>
+</html>

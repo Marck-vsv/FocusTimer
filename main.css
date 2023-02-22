@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121214;
+
+  display: grid;
+  place-content: center;
+
+  min-height: 100vh;
+
+  font-size: 88px;
+  line-height: 103px;
+  text-align: center;
+  color: white;
+}
+button { 
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  width: 64px;
+  height: 64px;
+}
+.hide {
+  display: none;
+}
+/* timerWrapper */
+.timerWrapper {
+  width: clamp(100px, 100px + 20vw, 230px);
+}
+/* timer */
+.timer {
+  display: flex;
+}
+/* timerController */
+.timerController {
+  border-radius: 9999px;
+  padding: 20px 40px;
+  background: rgba(66, 211, 255, 0.13);
+
+  display: flex;
+  justify-content: space-around;
+}
+/* soundController */
+.soundController {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+}
