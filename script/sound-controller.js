@@ -17,4 +17,3 @@ control.soundOff.addEventListener('click', function () {
   control.soundOff.classList.add('hide');
   control.soundOn.classList.remove('hide');
 });
-
